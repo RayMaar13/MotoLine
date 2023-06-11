@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(../assets/fonts/Open-Sans/OpenSans-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../assets/fonts/Open-Sans/OpenSans-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../assets/fonts/Open-Sans/OpenSans-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../assets/fonts/Open-Sans/OpenSans-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: "Albert Sans";
+  src: url(../assets/fonts/Albert-Sans-Main/AlbertSans-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Albert Sans";
+  src: url(../assets/fonts/Albert-Sans-Main/AlbertSans-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Albert Sans";
+  src: url(../assets/fonts/Albert-Sans-Main/AlbertSans-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Albert Sans";
+  src: url(../assets/fonts/Albert-Sans-Main/AlbertSans-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Arimo";
+  src: url(../assets/fonts/Arimo/Arimo-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Arimo";
+  src: url(../assets/fonts/Arimo/Arimo-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+

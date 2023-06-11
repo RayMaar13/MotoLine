@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesomes -->
+    <link
+      rel="stylesheet"
+      href="./assets/icons/fontawesome-free-6.4.0-web/css/fontawesome.css"
+    />
+    <link
+      href="./assets/icons/fontawesome-free-6.4.0-web/css/brands.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./assets/icons/fontawesome-free-6.4.0-web/css/solid.css"
+      rel="stylesheet"
+    />
+    <!-- Preload Image -->
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/bg.jpg"
+      type="image/jpg"
+    />
+    <title>MotoLine</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Moto<span>Line</span></h1>
+          <button onclick="navMenu()" class="hamburger"><i class="fa-regular fa-bars fa-xl" data-open="false"></i></button>
+          <!-- <button onclick="navMenu()" class="hamburger"><i class="fa-regular fa-bars fa-xl" ></i></button>
+          <button onclick="navMenu()" class="x-mark"><i class="fa-solid fa-xmark fa-xl" ></i></button> -->
+        </div>
+        <ul class="list-nav" data-isClicked="false">
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#product">Product</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <img class="bg-img" src="./assets/images/bg.jpg" alt="bg-img" />
+      <div class="hero-text">
+        <h4>Find The Best Motobike For the Best Rider!</h4>
+        <a href="#product"
+          ><button><p>Buy Now</p></button></a
+        >
+      </div>
+    </main>
+    <section id="about">
+      <div class="container">
+          <img src="assets/images/bike.jpg" alt="bike" />
+        <div class="right-side">
+          <h2>About this Company</h2>
+          <p>
+            &nbsp;<b>MotoLine</b> adalah perusahaan terkemuka dalam industri penjualan motor
+            secara daring. Kami berkomitmen untuk memberikan pengalaman belanja
+            motor yang mudah, aman, dan menyenangkan bagi pelanggan kami. Dengan
+            koleksi motor terlengkap dari berbagai merek terkenal, MotoLine
+            menjadi tujuan utama bagi pecinta motor yang mencari kendaraan
+            impian mereka.
+          </p>
+          <p>
+            Apa yang membedakan MotoLine adalah kemudahan dan kenyamanan dalam
+            berbelanja. Dengan platform online yang inovatif dan ramah pengguna,
+            kami memastikan pelanggan kami dapat menjelajahi berbagai pilihan
+            motor dengan mudah. Dari motor sport kelas 250cc hingga
+            1000cc, kami memiliki semua jenis motor yang sesuai dengan
+            kebutuhan dan gaya hidup Anda.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+    <div id="product">
+      <div class="card-container">
+        <div class="card">
+          <img src="./assets/images/kawasakizx25r.png" alt="kawasakizx25r">
+          <h1>Kawasaki ZX25r</h1>
+          <p>type Sport</p>
+          <div class="spec">
+            <i class="fa-solid fa-gauge"></i>
+            <p>250cc</p>
+          </div>
+          <div class="spec">
+            <i class="fa-regular fa-rupiah-sign"></i>
+            <p>98.850.000.00</p>
+          </div>
+          <button>BUY NOW</button>
+        </div>
+        <div class="card">
+          <img src="./assets/images/suzuki-gsxR1000.png" alt="Suzuki GSX R1000">
+          <h1>Suzuki GSX R1000</h1>
+          <p>type Sport</p>
+          <div class="spec">
+            <i class="fa-solid fa-gauge"></i>
+            <p>1000cc</p>
+          </div>
+          <div class="spec">
+            <i class="fa-regular fa-rupiah-sign"></i>
+            <p>340.000.000.00</p>
+          </div>
+          <button>BUY NOW</button>
+        </div>
+        <div class="card">
+          <img src="./assets/images/honda-CBR1000RR.png" alt="Honda CBR1000RR">
+          <h1>Honda CBR1000R</h1>
+          <p>type Sport</p>
+          <div class="spec">
+            <i class="fa-solid fa-gauge"></i>
+            <p>1000cc</p>
+          </div>
+          <div class="spec">
+            <i class="fa-regular fa-rupiah-sign"></i>
+            <p>1.080.000.000.00</p>
+          </div>
+          <button>BUY NOW</button>
+        </div>
+        <div class="card">
+          <img src="./assets/images/ducati-panigaleV4.png" alt="Ducati Paniagle V4">
+          <h1>Ducati Panigale V4</h1>
+          <p>type Sport</p>
+          <div class="spec">
+            <i class="fa-solid fa-gauge"></i>
+            <p>1000cc</p>
+          </div>
+          <div class="spec">
+            <i class="fa-regular fa-rupiah-sign"></i>
+            <p>800.000.000.00</p>
+          </div>
+          <button>BUY NOW</button>
+        </div>
+        <div class="card">
+          <img src="./assets/images/YamahaR1.png" alt="Yamaha R1">
+          <h1>Yamaha R1</h1>
+          <p>type Sport</p>
+          <div class="spec">
+            <i class="fa-solid fa-gauge"></i>
+            <p>1000cc</p>
+          </div>
+          <div class="spec">
+            <i class="fa-regular fa-rupiah-sign"></i>
+            <p>605.200.000.00</p>
+          </div>
+          <button>BUY NOW</button>
+        </div>
+        <div class="card">
+          <img src="./assets/images/ktm-RC390.png" alt="KTM RC390">
+          <h1>KTM RC390</h1>
+          <p>type Sport</p>
+          <div class="spec">
+            <i class="fa-solid fa-gauge"></i>
+            <p>390cc</p>
+          </div>
+          <div class="spec">
+            <i class="fa-regular fa-rupiah-sign"></i>
+            <p>104.900.000.00</p>
+          </div>
+          <button>BUY NOW</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <h1>Moto<span>Line</span></h1>
+      </div>
+      <div class="copyright">
+        <h3>&#169; Rayhan - MDK </h3>
+      </div>
+      <div class="list-sosmed">
+        <ul>
+          <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+          <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+          <li><a href="https://www.github.com"><i class="fa-brands fa-github fa-xl"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/app.js" type="text/javascript"></script>
+  </body>
+</html>

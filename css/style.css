@@ -1,0 +1,432 @@
+@import url(./font.css);
+:root {
+  --text: #ffffff;
+  --secondary_text: #333;
+  --background: #000000;
+  --secondary: #f5f5f5;
+  --primary-button: #f00538;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Albert Sans", sans-serif;
+  background-color: var(--background);
+}
+
+header {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  padding: 0.9rem 0;
+  top: 0;
+  left: 0;
+  color: var(--text);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div span {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 21%,
+    rgba(50, 47, 47, 1) 67%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hamburger,
+.x-mark {
+  display: none;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.fa-bars,
+.fa-xmark {
+  color: var(--text);
+}
+
+header h1 {
+  font-size: 2.125rem;
+  font-weight: 600;
+  letter-spacing: 0.13rem;
+}
+
+header nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+header ul a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0.54rem 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.83rem;
+  transition: 0.4s ease-in;
+  border-radius: 5px;
+}
+
+header ul a:hover {
+  /* font-size: 1.06rem; */
+  background-color: #fff;
+  color: #000;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: var(--text);
+}
+
+.bg-img {
+  position: absolute;
+  width: 105%;
+  top: calc(50% - 74px);
+  left: calc(50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+main .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  font-family: "Arimo", sans-serif;
+  font-size: 1.7rem;
+  text-align: center;
+  animation: fadeIn 1.4s ease-in;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+main button {
+  border: none;
+  border-radius: 5px;
+  margin-top: 1.1rem;
+  padding: 0.45rem 0.56rem;
+  background-color: var(--primary-button);
+  cursor: pointer;
+}
+
+main button p {
+  font-family: "Arimo", sans-serif;
+  font-weight: 600;
+  font-size: 1.13rem;
+  color: var(--text);
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  margin: 3.9rem 0;
+  color: var(--secondary_text);
+}
+
+#about .container {
+  display: flex;
+  width: 80%;
+  height: 650px;
+  border-radius: 5px;
+  background-color: rgb(245, 245, 245);
+}
+
+#about .container img {
+  width: 150%;
+}
+
+#about .container .right-side {
+  padding: 2rem 3.4rem;
+}
+
+#about .container .right-side h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.89rem;
+  margin-bottom: 3.86rem;
+}
+
+#about .container .right-side p {
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+
+#product {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15rem;
+}
+
+.card-container {
+  display: grid;  
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+  row-gap: 30px;
+}
+
+.card {
+  width: 350px;
+  padding: 1.125rem 1.4rem;
+  border-radius: 10px;
+  background-color: var(--secondary);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h1 {
+  font-family: "Albert Sans",sans-serif;
+  font-size: 1.56rem ;
+  margin-top: 30px;
+}
+
+.card h1 + p {
+  font-size: 0.78rem;
+  color: #8e8e8e;
+  margin-bottom: 27px;
+}
+
+.spec {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 15px;
+  text-align: center;
+  font-family: "Arimo";
+  font-weight: 500;
+  font-size: 1.13rem;
+  color: #000;
+}
+
+.spec .fa-gauge,
+.spec .fa-rupiah-sign {
+  font-family: 400;
+}
+
+.spec + button {
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-button);
+  color: var(--text);
+  padding: 6px 10px;
+  margin-top: 34px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 25px;
+  background-color: var(--secondary);
+  color: var(--secondary_text);
+}
+
+footer h3 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+footer ul li a{
+  color: var(--secondary_text);
+}
+
+.show {
+  display: flex;
+}
+
+@media screen and (max-width: 760px) {
+  header {
+    width: 100vw;
+  }
+  header .hamburger {
+    display: block;
+  }
+  header nav {
+    display: block;
+  }
+
+  header ul {
+    flex-direction: column;
+    align-items: end;
+    padding: 0.4rem 0;
+    display: none;
+  }
+  header ul li {
+    padding: 0.4rem 0;
+  }
+  header .list {
+    display: flex;
+    justify-content: end;
+  }
+
+  .bg-img {
+    width: 210%;
+  }
+
+  main .hero-text {
+    top: calc(50% - 40px);
+    font-size: 0.96rem;
+  }
+
+  main button {
+    margin-top: 0.45rem;
+  }
+
+  main button p {
+    font-size: 0.68rem;
+  }
+
+  #about .container {
+    flex-direction: column;
+    height: 780px;
+  }
+
+  #about .container img {
+    content: url(../assets/images/bike-mobile.jpg);
+    width: 100%;
+  }
+
+  #about .container .right-side {
+    padding: 1rem 1.3rem;
+  }
+
+  #about .container .right-side h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.94rem;
+  }
+  #about .container .right-side p {
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: normal;
+    margin-bottom: 1.2rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  footer .copyright {
+    align-self: self-start;
+  }
+
+  footer .list-sosmed {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1214px) {
+  .bg-img {
+    width: 120%;
+  }
+
+  main .hero-text {
+    top: calc(50% - 55px);
+    font-size: 1.34rem;
+  }
+
+  main button p {
+    font-size: 0.85rem;
+  }
+
+  #about .container {
+    flex-direction: column;
+    height: 1000px;
+  }
+
+  #about .container img {
+    content: url(../assets/images/bike-mobile.jpg);
+    width: 100%;
+  }
+  #about .container .right-side {
+    padding: 1rem 1.3rem;
+  }
+
+  #about .container .right-side h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1.58rem;
+  }
+  #about .container .right-side p {
+    font-size: 1.24rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.2rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 356px) {
+  #about .container .right-side h2 {
+    font-size: 1.2rem;
+  }
+
+  #about .container .right-side p {
+    font-size: 0.86rem;
+  }
+}
+
+@media only screen and (min-width: 800px){
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
